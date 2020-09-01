@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+    
+}
+
+.container {
+    display:  grid;
+    grid-template-areas:
+        'header'
+        'main'
+        'education'
+        'contact'
+        'footer';
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 400px 250px 300px 100px;
+}
+
+.header {
+    grid-area: header;
+    background: rgb(180,178,201);
+    background: radial-gradient(circle,#a8dadc ,#f1faee );
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+ li {
+    padding: .3em
+    
+     
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+
+
+.main {
+    grid-area: main;
+    background-image: url(../images/6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgba(8, 8, 8, 0.801);
+    margin: 0.5em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.main h1 {
+    clear: both;
+}
+
+.main p {
+    font-weight: 800;
+    line-height: 110%;
+}
+
+.main > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid white;
+    float: left;
+    padding: 0.2em;
+}
+.education {
+    grid-area: education;
+    background: radial-gradient(circle,#a8dadc ,#f1faee );
+    
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.education h3 {
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    margin-bottom: 4px;
+}
+
+.education li {
+    text-align: left;
+    font-weight: 800;
+    
+}
+
+ .education ul {
+    margin: 2px;
+    padding: 2px;
+
+}
+
+.contact-me {
+    grid-area: contact;
+    background: rgb(214, 224, 214);
+    margin: 0.5em;
+    text-align: center;
+    padding: 0.5em;
+}
+
+form {
+    padding: 3px;
+    }
+
+#text {
+    width: 70%;
+    border: none;
+    border-bottom: 3px solid grey;
+    border-radius:5px;
+}
+
+input  {
+    margin: 7px;
+    width: 70%;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid grey;
+    border-radius: 5px;
+}
+.footer {
+    grid-area: footer;
+    background: lightsteelblue;
+    background: radial-gradient(circle,#a8dadc ,#f1faee );
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.footer img {
+    height: 50px;
+    width: 50px;
+}
+
+#submit {
+    background: black;
+    color: white;
+    border-radius: 15px;
+    margin-top: 10px
+}
+
+@media (min-width: 1020px){
+    .container {
+        grid-template-areas:
+        'header header'
+        'main main'
+        'education contact'
+        'footer footer';
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 300px 300px 100px;
+    }
+
+    nav > ul {
+        justify-content: start;
+    }
+
+    .main h1 {
+        float: left;
+    }
+
+    .main h3 , p {
+        display: flex;
+        align-items: center;
+    }
+
+}
