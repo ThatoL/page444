@@ -2,66 +2,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel='stylesheet' href='css/style.css'>
+    <title>Front Page Thato</title>
+    <link href="style/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c662d66d9f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <div class='header'>
+    <header>
+        <div class = 'name-container'>
+            <h1>Thato Lebethe</h1>
+            
+        </div>
+        <div class='nav-container'>
             <nav>
-                <ul>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                </ul>
+                <a href="#">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact Me</a>
             </nav>
         </div>
-
-        <div class='main'>
-            <img src="/images/IMG-20190501-WA0038.jpg" alt='Dev'>
-            <h1>Thato Lebethe</h1>
-            <h3>Web Designer and Developer</h3>
-           
-            <p>Thato Lebethe is the name  and web development is the game</p><br>
-            <p>I have a passion for web development and a keen eye for minimalistic designs</p>
+    </header>
+    <main>
+        <div class='img-container'>
+            <img src="images/2.jpg" alt='pic of dev'>
         </div>
-        
-
-        <div class='education'>
-            <h3>Education</h3>
-            <h4>Courses Completed :</h4>
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>Thato Lebethe is the name and Web Development is the game</p>
+            <p>I am currently a student of web development and my aim is to design sleek , minimalistic web sites</p>
+            <p>My Skills include:</p>
             <ul>
-                <li>FreeCodeCamp</li>
-                <li>Web Development For Everyone . Coursera</li>
-                <li>CodeCademy , Web Development Path</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
             </ul>
+            <p>Education :</p>
+            <ul>
+                <li>Coursera: Web Development For Everyone</li>
+                <li>FreeCodeCamp</li>
+                <li>CodeCademy : Web Dev Path</li>
+            </ul>
+
+            <h2 id="projects">Prior Experince</h2>
+            <p>In the past year as a Junior Web Developer i have designed functional ,east to use and UI friendly wireframes.
+                I have turned those wireframes into functional websites using HTML and CSS  3 in making them up to industry standard  
+                as well as visiually apealing.
+                I also have javascript experince turning static websites into functional , interactive and responsive websites.
+            </p>
         </div>
-
-        <div class='contact-me'>
-            <h3>Contact Me</h3>
-            <p>Want to discuss some possible future projects?</p>
-            <p>Contact me</p>
-            <form>
-                <input type='text' placeholder='Enter Name:' >
-                <br>
-                <input type='email'  placeholder='Enter Email'>
-                <br>
-                <textarea id='text' placeholder="">
-                   Message
-
-                </textarea>
-                <br>
-                <input id="submit" type='submit'>
-            </form>
-        </div>
-
-        <div class='footer'>
-             <a> <img src=' ./svg/png/instagram.png' </a>
-            <a> <img src=' ./svg/png/facebook.png' </a>
-            <a> <img src=' ./svg/png/twitter.png' </a>
+    </main>
+    <div>
+        
+        <div class="contact-container " id="contact">
+            <h2>For any inquiries or questions</h2>
+            <p>Want to know more about my work and how i can transform your websites? Please feel free to  message me below.</p>
+           
+            
+              
+              
 
         </div>
-
     </div>
+    <footer>
+
+        <form>
+            
+            <label for='name'></label>
+            <input id='name' type='text' placeholder='Enter Name' >
+            <label for='email'></label><br>
+            <input id='email' type='email' placeholder="Enter your Email:">
+            <label for='subject'></label>
+            <input id='subject1' type='text' placeholder="Enter Subject:">
+            <input type='text'  placeholder='Enter your Message'>
+            <br>
+            <br>
+           
+          </form>
+          <input type='submit' id="submit">
+
+
+
+        <div class ="social-container">
+           <!-- <a href="#"><i class="fab fa-lg fa-facebook-square"></i></a> 
+            <a  href="#"><i class="fab fa-lg fa-twitter-square"></i> </a>
+            <a  href="#"><i class="fab fa-lg fa-instagram-square"></i> </a> -->
+            <a href='#'> <img src='svgs/svg/facebook.svg' > </a>
+            <a href='#'> <img src='svgs/svg/instagram.svg' ></a>
+            <a href='#'> <img src='svgs/svg/twitter.svg' ></a>
+         </div>
+         <small>2020 project by Thato Lebethe</small>   
+    </footer>
+  
+    
 </body>
 </html>
